@@ -8,4 +8,5 @@ featuredimage: /img/blog-index.jpg
 tags:
   - first post
 ---
-like please work
+
+like please work.
