@@ -13,7 +13,8 @@ const Navbar = () => {
   // const navbar = document.querySelector('.navbar')
 
   useEffect(() => {
-    // TODO: make changeColors accept class names
+    // TODO: make this a script with append script,
+    // make a scripts folder or something
     // window.addEventListener('scroll', debounce(changeColors(NavContainer)))
   })
 
