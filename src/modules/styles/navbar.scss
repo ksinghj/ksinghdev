@@ -1,0 +1,77 @@
+// variables
+$colors: (
+  primary: #1593ff,
+  primary-light: lighten(#1593ff, 40%),
+  primary-dark: darken(#1593ff, 10%),
+);
+// mixins
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+.container {
+  section.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 5em;
+    background: #b3d6f0;
+    width: 100vw;
+    position: fixed;
+    transition: ease-in-out 250ms;
+
+    img {
+      width: 200px;
+      height: auto;
+    }
+    .nav-button,
+    .button {
+      color: color(primary);
+      background: #b3d6f0;
+      border: 1px solid color(primary);
+      border-radius: 5px;
+      padding: 0.5em 1em;
+      font-size: 14px;
+      transition: ease-in-out 200ms;
+    }
+    .button:hover,
+    .button.active:hover,
+    .button-active-second:hover {
+      cursor: pointer;
+    }
+    .button.active {
+      border-color: rgba(128, 128, 128, 0.651);
+      background: white;
+    }
+    .button.active:hover {
+      border-color: color(primary);
+    }
+    button.active-second {
+      background: color(primary);
+      color: white;
+      border-color: color(primary);
+    }
+    .button.active-second:hover {
+      background-color: color(primary-dark);
+    }
+  }
+  section.navbar.active {
+    background: white;
+  }
+  section.content {
+    padding-top: 3em;
+    background: #b3d6f0;
+
+    text-align: center;
+
+    p {
+      padding: 2rem 5rem;
+    }
+  }
+}
+
+// helpers
+.has-shadow {
+  box-shadow: 0 2px 3px 0 hsla(0, 0%, 0%, 0.2);
+}
