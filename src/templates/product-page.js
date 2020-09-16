@@ -7,24 +7,12 @@ import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const ProductPageTemplate = ({
-  image,
-  title,
-  heading,
-  description,
-  intro,
-  main,
-  testimonials,
-  fullImage,
-  pricing,
-}) => (
+export const ProductPageTemplate = ({ image, title, heading, description, intro, main, testimonials, fullImage, pricing }) => (
   <div className="content">
     <div
       className="full-width-image-container margin-top-0"
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
+        backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
       }}
     >
       <h2
@@ -53,9 +41,7 @@ export const ProductPageTemplate = ({
               <Features gridItems={intro.blurbs} />
               <div className="columns">
                 <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-3">
-                    {main.heading}
-                  </h3>
+                  <h3 className="has-text-weight-semibold is-size-3">{main.heading}</h3>
                   <p>{main.description}</p>
                 </div>
               </div>
@@ -84,16 +70,10 @@ export const ProductPageTemplate = ({
               <div
                 className="full-width-image-container"
                 style={{
-                  backgroundImage: `url(${
-                    fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
-                      : fullImage
-                  })`,
+                  backgroundImage: `url(${fullImage.childImageSharp ? fullImage.childImageSharp.fluid.src : fullImage})`,
                 }}
               />
-              <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
-              </h2>
+              <h2 className="has-text-weight-semibold is-size-2">{pricing.heading}</h2>
               <p className="is-size-5">{pricing.description}</p>
               <Pricing data={pricing.plans} />
             </div>
