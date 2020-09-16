@@ -4,19 +4,10 @@ import github from '../img/github-icon.svg'
 import twitter from '../img/social/twitter.svg'
 import logo from '../img/logo.svg'
 import NavContainer from './NavContainer'
-import { debounce, changeColors } from '../modules/JS/nav'
 
 const Navbar = () => {
   const [active, setActive] = useState(false)
   const [navBarActiveClass, setnavBarActiveClass] = useState('')
-
-  // const navbar = document.querySelector('.navbar')
-
-  useEffect(() => {
-    // TODO: make this a script with append script,
-    // make a scripts folder or something
-    // window.addEventListener('scroll', debounce(changeColors(NavContainer)))
-  })
 
   const toggleHamburger = () => {
     // toggle the active boolean in the state
