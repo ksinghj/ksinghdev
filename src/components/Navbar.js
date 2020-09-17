@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
         <div id="navMenu" className={`navbar-menu ${navBarActiveClass}`}>
           <div className="navbar-start has-text-centered">
-            <Link className="navbar-item" to="/blog">
+            <Link className="navbar-item navbar__link" to="/blog">
               Blog
             </Link>
             {
@@ -59,7 +59,7 @@ const Navbar = () => {
               </span>
             </a>
             <a className="navbar-item" href="https://twitter.com/kartarjabanda" target="_blank" rel="noopener noreferrer">
-              <span className="icon">
+              <span className="icon" style={{ width: '40px' }}>
                 <img src={twitter} alt="Twitter logo" />
               </span>
             </a>
