@@ -4,7 +4,7 @@ import Card from './Card'
 import '../modules/styles/features.sass'
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-multiline features__grid">
+  <div className="features__grid">
     {gridItems.map(item => (
       <Card key={item.text} data={item} />
     ))}
