@@ -1,21 +1,12 @@
 ---
 templateKey: index-page
-title: Homepage (title)
-image: /img/home-jumbotron.jpg
-heading: homepage heading
-subheading: Homepage subheading
-mainpitch:
-  title: Kartar
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+
+title: Welcome 😎️ I’m Kartar and this is my website.
+description:
+  Hi, so you have found my website. It’s still a work in progress but here you are anyway. Take a look around, I’m still getting set up but there should be a few blog posts already. Hopefully you get a feel for what this is and why I’m doing it.
+
+  Be sure to check back soon!
+
 intro:
   blurbs:
     - image: /img/coffee.png
