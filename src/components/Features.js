@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Card from './Card'
+import '../modules/styles/features.sass'
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <div className="columns is-multiline features__grid">
     {gridItems.map(item => (
       <Card key={item.text} data={item} />
     ))}
