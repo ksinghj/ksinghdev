@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const NavContainer = ({ children }) => {
   return (
-    <nav className="navbar is-fixed-top" role="navigation" aria-label="main-navigation">
+    <nav className="navbar" role="navigation" aria-label="main-navigation" style={{ background: 'transparent' }}>
       {children}
     </nav>
   )
