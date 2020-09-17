@@ -5,11 +5,11 @@ import '../modules/styles/card.sass'
 const Card = ({ data }) => {
   let imageStyle = { maxWidth: '100px' }
   return (
-    <div key={data.text} className="column is-5 card__container mx-auto">
+    <div key={data.text} className="card__container card-teal mx-auto mt-4">
       <section className="section">
         <div className="has-text-centered">
           <Img className="card__img mb-4" style={imageStyle} fluid={data.image.childImageSharp.fluid} />
-          <p>{data.text}</p>
+          <h3 className="card__header mt-5">{data.text}</h3>
         </div>
       </section>
     </div>
