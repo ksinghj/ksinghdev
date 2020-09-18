@@ -7,14 +7,9 @@ import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const ProductPageTemplate = ({ image, title, heading, description, intro, main, testimonials, fullImage, pricing }) => (
+export const ProductPageTemplate = ({ title, heading, description, intro, main, testimonials, fullImage, pricing }) => (
   <div className="content">
-    <div
-      className="full-width-image-container margin-top-0"
-      style={{
-        backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
-      }}
-    >
+    <div>
       <h2
         className="has-text-weight-bold is-size-1"
         style={{
@@ -85,7 +80,6 @@ export const ProductPageTemplate = ({ image, title, heading, description, intro,
 )
 
 ProductPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
@@ -114,7 +108,6 @@ const ProductPage = ({ data }) => {
   return (
     <Layout>
       <ProductPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
@@ -143,13 +136,6 @@ export const productPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         heading
         description
         intro {
