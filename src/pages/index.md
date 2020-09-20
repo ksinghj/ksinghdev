@@ -22,3 +22,5 @@ intro:
       text: >
         Self Improvement
 ---
+
+This should appear as html on the index page

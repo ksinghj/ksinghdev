@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
-export const IndexPageTemplate = ({ title, description, intro }) => (
+export const IndexPageTemplate = ({ title, description, intro, html }) => (
   <div>
     <section className="section section--gradient">
       <div className="container">
@@ -22,6 +22,8 @@ export const IndexPageTemplate = ({ title, description, intro }) => (
                     <h3 className="subtitle">{description}</h3>
                   </div>
                 </div>
+
+                <div>{html}</div>
 
                 <Features gridItems={intro.blurbs} />
 
@@ -64,11 +66,11 @@ IndexPageTemplate.propTypes = {
 }
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter, html } = data.markdownRemark
 
   return (
     <Layout>
-      <IndexPageTemplate title={frontmatter.title} description={frontmatter.description} intro={frontmatter.intro} />
+      <IndexPageTemplate title={frontmatter.title} description={frontmatter.description} intro={frontmatter.intro} html={html} />
     </Layout>
   )
 }
@@ -102,6 +104,7 @@ export const pageQuery = graphql`
           }
         }
       }
+      html
     }
   }
 `
