@@ -2,10 +2,7 @@
 templateKey: index-page
 
 title: Welcome 😎️ I’m Kartar and this is my website.
-description:
-  Hi, so you have found my website. It’s still a work in progress but here you are anyway. Take a look around, I’m still getting set up but there should be a few blog posts already. Hopefully you get a feel for what this is and why I’m doing it.
-
-  Be sure to check back soon!
+description: Hi, so you have found my website. It’s still a work in progress but here you are anyway. Take a look around, I’m still getting set up but there should be a few blog posts already. Hopefully you get a feel for what this is and why I’m doing it.
 
 intro:
   blurbs:
@@ -23,4 +20,4 @@ intro:
         Self Improvement
 ---
 
-This should appear as html on the index page
+Be sure to check back soon!
