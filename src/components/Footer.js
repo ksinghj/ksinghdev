@@ -6,6 +6,8 @@ import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import linkedin from '../img/social/linkedin.svg'
 
+import '../modules/styles/footer.sass'
+
 const Footer = class extends React.Component {
   render() {
     return (
