@@ -37,8 +37,9 @@ export const IndexPageTemplate = ({ title, description, intro, html }) => (
                   //   </div>
                   // </div>
                 }
+
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">Latest stories</h3>
+                  <h3 className="has-text-weight-semibold is-size-2">Latest Blog Updates</h3>
 
                   <BlogRoll />
 
