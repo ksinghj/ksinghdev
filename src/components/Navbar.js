@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import twitter from '../img/social/twitter.svg'
-import k from '../img/K/k-white.png'
+import k from '../img/K/k-gray.png'
 import NavContainer from './NavContainer'
 import '../modules/styles/navbar.sass'
 
