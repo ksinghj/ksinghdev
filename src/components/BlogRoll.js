@@ -15,7 +15,7 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <Link className="blogroll__post is-parent column is-6" key={post.id} to={post.fields.slug}>
               <article
-                className={`blog-list-item tile is-child notification card card-teal ${post.frontmatter.featuredpost ? 'is-featured card-purp' : ''}`}
+                className={`blog-list-item tile is-child notification card-teal ${post.frontmatter.featuredpost ? 'is-featured card-purp' : ''}`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
