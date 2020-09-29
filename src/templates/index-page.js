@@ -5,9 +5,9 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
-import Content, { HTMLContent } from '../components/Content'
+// import Content, { HTMLContent } from '../components/Content'
 
-export const IndexPageTemplate = ({ title, description, intro, html }) => (
+export const IndexPageTemplate = ({ title, description, intro }) => (
   <div>
     <section className="section section--gradient">
       <div className="container">
@@ -15,16 +15,15 @@ export const IndexPageTemplate = ({ title, description, intro, html }) => (
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
+                <div className="content" style={{ margin: '7em 0' }}>
                   <div className="tile">
                     <h1 className="title is-size-2-desktop">{title}</h1>
                   </div>
                   <div className="tile">
-                    <h5 className="subtitle">{description}</h5>
+                    <p className="is-size-5">{description}</p>
                   </div>
+                  <p className="is-size-5 mt-3">Be sure to check back soon!</p>
                 </div>
-
-                <HTMLContent content={html} />
 
                 <Features gridItems={intro.blurbs} />
 
