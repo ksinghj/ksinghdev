@@ -16,7 +16,7 @@ export default class BlogIndexPage extends React.Component {
             backgroundPosition: '50% 52%',
           }}
         >
-          <h1 className="blog__header has-text-weight-bold is-size-1">The Blog</h1>
+          <h1 className="blog__header has-text-weight-bold is-size-1 no-mode">The Blog</h1>
         </div>
         <section className="section">
           <div className="container">

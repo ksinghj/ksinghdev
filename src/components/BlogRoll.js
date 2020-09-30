@@ -15,7 +15,7 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <Link className="blogroll__post is-parent column is-6" key={post.id} to={post.fields.slug}>
               <article
-                className={`blog-list-item tile is-child notification card-teal ${post.frontmatter.featuredpost ? 'is-featured card-purp' : ''}`}
+                className={`blog-list-item tile is-child notification card card-teal ${post.frontmatter.featuredpost ? 'is-featured card-purp' : ''}`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
@@ -28,7 +28,7 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <h4 className="is-size-4 post-meta">{post.frontmatter.title}</h4>
+                  <h4 className="is-size-4 post-meta no-mode">{post.frontmatter.title}</h4>
                 </header>
                 <div>
                   {post.excerpt}
@@ -36,7 +36,7 @@ class BlogRoll extends React.Component {
                   <br />
                   <div className="columns">
                     <span className="is-block column is-6 has-text-weight-bold">{post.frontmatter.date}</span>
-                    <p className=" column is-6 has-text-right has-text-weight-bold" to={post.fields.slug}>
+                    <p className=" column is-6 has-text-right has-text-weight-bold no-mode" to={post.fields.slug}>
                       Read more
                     </p>
                   </div>

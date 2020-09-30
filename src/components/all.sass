@@ -4,8 +4,8 @@
 $green: #B7FF6F
 $gray: #343434
 
-$text: #fff
-$text-invert: #000000
+$text: #000000
+$text-invert: #fff
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -16,9 +16,6 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: $gray
 $black: #2b2523
-
-// body
-//   background: $body-color
 
 .content .taglist
   list-style: none
@@ -168,3 +165,31 @@ $menu-label-color: $white-ter
 //
 a
   text-decoration: none !important
+
+//
+// dark mode styles
+//
+body.is-dark
+  background: $body-color
+  color: $text-invert
+
+  .title
+    color: $text-invert !important
+
+  .navbar__link
+    color: $text-invert !important
+
+  // remove bulma styling
+  .navbar-item:hover
+    background: $body-color !important
+  //
+
+  // unchanged by mode
+  .no-mode
+    color: $text !important
+
+  a:hover
+    color: $green
+
+  h1, h2, h3, h4, h5, h6, p
+    color: $text-invert !important

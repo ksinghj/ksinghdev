@@ -4,6 +4,7 @@ import github from '../img/github-icon.svg'
 import twitter from '../img/social/twitter.svg'
 import k from '../img/K/k-gray.png'
 import NavContainer from './NavContainer'
+import ModeToggle from './ModeToggle'
 import '../modules/styles/navbar.sass'
 
 const Navbar = () => {
@@ -63,6 +64,7 @@ const Navbar = () => {
                 <img src={twitter} alt="Twitter logo" />
               </span>
             </a>
+            <ModeToggle classNames="navbar-item" />
           </div>
         </div>
       </div>

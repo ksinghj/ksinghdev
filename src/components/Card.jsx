@@ -9,7 +9,7 @@ const Card = ({ data }) => {
       <section className="section">
         <div className="has-text-centered">
           <Img className="card__img mb-4" style={imageStyle} fluid={data.image.childImageSharp.fluid} />
-          <h3 className="card__header mt-5">{data.text}</h3>
+          <h3 className="card__header mt-5 no-mode">{data.text}</h3>
         </div>
       </section>
     </div>
