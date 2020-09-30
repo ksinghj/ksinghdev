@@ -64,7 +64,9 @@ const Navbar = () => {
                 <img src={twitter} alt="Twitter logo" />
               </span>
             </a>
-            <ModeToggle classNames="navbar-item" />
+            <a classNames="navbar-item">
+              <ModeToggle classNames="has-text-centered" />
+            </a>
           </div>
         </div>
       </div>
