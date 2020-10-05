@@ -5,7 +5,6 @@ const ModeToggle = ({ classNames }) => {
 
   const toggleMode = () => {
     mode === 'light' ? setMode('dark') : setMode('light')
-    console.log(mode)
     document.body.classList.toggle('is-dark')
     //mode === 'dark' ?
   }

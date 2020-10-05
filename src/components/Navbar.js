@@ -4,7 +4,8 @@ import github from '../img/github-icon.svg'
 import twitter from '../img/social/twitter.svg'
 import k from '../img/K/k-gray.png'
 import NavContainer from './NavContainer'
-import ModeToggle from './ModeToggle'
+import DarkModeToggle from './DarkModeToggle/DarkModeToggle'
+
 import '../modules/styles/navbar.sass'
 
 const Navbar = () => {
@@ -24,7 +25,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <img src={k} alt="Kaldi" style={{ width: '28px', height: '28px', borderRadius: '5px' }} />
+            <img src={k} alt="Logo" style={{ width: '28px', height: '28px', borderRadius: '5px' }} />
           </Link>
           {/* Hamburger menu */}
           <div className={`navbar-burger burger ${navBarActiveClass}`} data-target="navMenu" onClick={() => toggleHamburger()}>
@@ -64,8 +65,8 @@ const Navbar = () => {
                 <img src={twitter} alt="Twitter logo" />
               </span>
             </a>
-            <a classNames="navbar-item">
-              <ModeToggle classNames="has-text-centered" />
+            <a className="navbar-item">
+              <DarkModeToggle />
             </a>
           </div>
         </div>
