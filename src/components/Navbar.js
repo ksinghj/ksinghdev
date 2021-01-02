@@ -5,6 +5,8 @@ import twitter from '../img/social/twitter.svg'
 import k from '../img/K/k-gray.png'
 import NavContainer from './NavContainer'
 import DarkModeToggle from './DarkModeToggle/DarkModeToggle'
+// borked npm module v
+// import ReactModeToggle from 'react-mode-toggle'
 
 import '../modules/styles/navbar.sass'
 
