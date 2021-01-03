@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,GAAG,EAAE,GAAG;EACR,MAAM,EAAE,QAAQ;EAChB,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,GAAG;EACvB,qBAAqB,EAAE,GAAG;CAAG;;AAEjC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,eAAe,CAAC;IACZ,kBAAkB,EAAE,OAAO;IAC3B,qBAAqB,EAAE,OAAO;GAAG",
-    "sources": [
-        "features.sass"
-    ],
-    "names": [],
-    "file": "features.css"
-}
