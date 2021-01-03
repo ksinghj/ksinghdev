@@ -1,0 +1,51 @@
+.dmt__container {
+  width: 60px !important;
+  height: 30px !important;
+}
+
+.dmt__button {
+  border: 2px solid #10b7ff;
+  border-radius: 53px;
+  background-image: url('../../components/DarkModeToggle/img/light.png');
+  background-size: cover;
+  background-position-x: 5px;
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
+}
+
+.dmt__button-head {
+  background: #303030;
+  border-radius: 50%;
+  width: 50%;
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.dmt__toggled {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.dmt__toggled__bg {
+  background-image: url('../../components/DarkModeToggle/img/dark.png') !important;
+  border-color: #303030 !important;
+}
+
+.dmt__container__sm {
+  width: 60px !important;
+  height: 30px !important;
+}
+
+.container__lg {
+  width: 100px !important;
+  height: 50px !important;
+}
+/*# sourceMappingURL=styles.css.map */
