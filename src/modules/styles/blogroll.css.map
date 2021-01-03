@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,KAAK,EAAE,KAAK;CAAG;;AAEnB,AAAA,eAAe,CAAC;EACZ,UAAU,EAAE,KAAK;EACjB,0BAA0B,EAAE,mCAA6B;CAAG;;AAEhE,AAAA,eAAe,AAAA,MAAM,CAAC;EAClB,SAAS,EAAE,WAAW;CAAG",
-    "sources": [
-        "blogroll.sass"
-    ],
-    "names": [],
-    "file": "blogroll.css"
-}
